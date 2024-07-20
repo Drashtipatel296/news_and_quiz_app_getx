@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_carousel_slider/carousel_slider.dart';
 import 'package:get/get.dart';
-import 'package:news_app_with_getx/controller/data_controller.dart';
-import 'package:news_app_with_getx/view/details/details_screen.dart';
+
+import '../../controller/data_controller.dart';
+import '../details/details_screen.dart';
 
 List<String> img = [
   'https://thumbs.dreamstime.com/b/news-newspapers-folded-stacked-word-wooden-block-puzzle-dice-concept-newspaper-media-press-release-42301371.jpg',

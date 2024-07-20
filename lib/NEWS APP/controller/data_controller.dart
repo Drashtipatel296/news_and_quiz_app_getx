@@ -1,8 +1,9 @@
 import 'dart:convert';
 import 'dart:developer';
 import 'package:get/get.dart';
-import 'package:news_app_with_getx/helper/api_service.dart';
-import 'package:news_app_with_getx/model/news_data.dart';
+
+import '../helper/api_service.dart';
+import '../model/news_data.dart';
 
 class DataController extends GetxController{
   NewsModel? newsModel;

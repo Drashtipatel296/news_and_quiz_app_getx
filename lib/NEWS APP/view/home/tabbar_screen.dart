@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_with_getx/view/home/home_page.dart';
+
+import 'home_page.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -41,8 +42,6 @@ class HomeScreen extends StatelessWidget {
         body: TabBarView(
           children: [
             HomePage(),
-            FlutterLogo(),
-            FlutterLogo(),
           ],
         ),
       ),

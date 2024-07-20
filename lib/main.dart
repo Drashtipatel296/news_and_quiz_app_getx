@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:news_app_with_getx/view/home/home_screen.dart';
+
+import 'NEWS APP/view/home/tabbar_screen.dart';
 
 void main(){
   runApp(const NewsApp());
