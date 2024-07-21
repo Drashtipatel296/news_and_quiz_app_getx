@@ -44,7 +44,7 @@ class QuizScreen extends StatelessWidget {
               const Divider(color: Colors.grey),
               const SizedBox(height: 35),
               Text(
-                "${quizController.currentQuestionIndex.value + 1}. ${question.questionText}",
+                "${quizController.currentQuestionIndex.value + 1}. ${question.question}",
                 style: const TextStyle(
                     color: Colors.white,
                     fontSize: 28,
@@ -54,7 +54,7 @@ class QuizScreen extends StatelessWidget {
               ...List.generate(question.options.length, (index) {
                 final isSelected = quizController.selectedAnswerIndex.value == index;
                 final isCorrect = quizController.isAnswered.value &&
-                    index == question.correctAnswerIndex;
+                    index == question.rightAnswerIndex;
                 final backgroundColor = isCorrect
                     ? Colors.green
                     : isSelected

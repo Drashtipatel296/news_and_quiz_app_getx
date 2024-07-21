@@ -11,54 +11,54 @@ class QuizController extends GetxController {
 
   final List<Question> questions = [
     Question(
-      questionText: "Who is 'Father of AI'?",
+      question: "Who is 'Father of AI'?",
       options: ['John McCarthy', 'Alan Turing', 'Marvin Minsky', 'Arthur Samuel'],
-      correctAnswerIndex: 0,
+      rightAnswerIndex: 0,
     ),
     Question(
-      questionText: "Which planet is known as the Red Planet?",
+      question: "Which planet is known as the Red Planet?",
       options: ['Earth', 'Mars', 'Jupiter', 'Venus'],
-      correctAnswerIndex: 1,
+      rightAnswerIndex: 1,
     ),
     Question(
-      questionText: "Who was the first person to walk on the moon?",
+      question: "Who was the first person to walk on the moon?",
       options: ['Yuri Gagarin', 'Neil Armstrong', 'Buzz Aldrin', 'Michael Collins'],
-      correctAnswerIndex: 1,
+      rightAnswerIndex: 1,
     ),
     Question(
-      questionText: "What do you call a fish with no eyes?",
+      question: "What do you call a fish with no eyes?",
       options: ['Blind as a bat', 'Fish', 'Dory', "Nemo's older brother"],
-      correctAnswerIndex: 1,
+      rightAnswerIndex: 1,
     ),
     Question(
-      questionText: "Which bird is a symbol of peace?",
+      question: "Which bird is a symbol of peace?",
       options: ['Eagle', 'Dove', 'Hawk', 'Crow'],
-      correctAnswerIndex: 1,
+      rightAnswerIndex: 1,
     ),
     Question(
-      questionText: "What is the smallest bone in the human body?",
+      question: "What is the smallest bone in the human body?",
       options: ['Stapes (in the ear)', 'Patella (kneecap)', 'Tibia (shinbone)', 'Clavicle (collarbone)'],
-      correctAnswerIndex: 0,
+      rightAnswerIndex: 0,
     ),
     Question(
-      questionText: "What is the smallest country in the world?",
+      question: "What is the smallest country in the world?",
       options: ['Monaco', 'San Marino', 'Vatican City', 'Liechtenstein'],
-      correctAnswerIndex: 2,
+      rightAnswerIndex: 2,
     ),
     Question(
-      questionText: "What is the hardest natural substance on Earth?",
+      question: "What is the hardest natural substance on Earth?",
       options: ['Gold', 'Iron', 'Platinum', 'Diamond'],
-      correctAnswerIndex: 3,
+      rightAnswerIndex: 3,
     ),
     Question(
-      questionText: "Which bird can fly backwards?",
+      question: "Which bird can fly backwards?",
       options: ['Eagle', 'Sparrow', 'Hummingbird', 'Parrot'],
-      correctAnswerIndex: 2,
+      rightAnswerIndex: 2,
     ),
     Question(
-      questionText: "What sport is known as the 'king of sports'?",
+      question: "What sport is known as the 'king of sports'?",
       options: ['Baseball', 'Basketball', 'Soccer (Football)', 'Tennis'],
-      correctAnswerIndex: 2,
+      rightAnswerIndex: 2,
     ),
   ];
 
@@ -66,7 +66,7 @@ class QuizController extends GetxController {
     if (!isAnswered.value) {
       selectedAnswerIndex.value = index;
       isAnswered.value = true;
-      if (index == questions[currentQuestionIndex.value].correctAnswerIndex) {
+      if (index == questions[currentQuestionIndex.value].rightAnswerIndex) {
         score.value++;
       }
     }

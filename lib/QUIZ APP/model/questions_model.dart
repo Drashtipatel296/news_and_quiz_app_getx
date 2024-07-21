@@ -1,11 +1,11 @@
 class Question {
-  final String questionText;
+  final String question;
   final List<String> options;
-  final int correctAnswerIndex;
+  final int rightAnswerIndex;
 
   Question({
-    required this.questionText,
+    required this.question,
     required this.options,
-    required this.correctAnswerIndex,
+    required this.rightAnswerIndex,
   });
 }
